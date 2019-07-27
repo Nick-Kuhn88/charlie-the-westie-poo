@@ -4,12 +4,29 @@
     <title>Charlie</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="text-center">
+          <h1>Charlie the Westie-Poo</h1>      
+          <p>The cutest dog in world. The happiesst fellow there ever was.</p>
+        </div>
+      </div>
+      <div class="text-center">
+      <h3>He loves to cuddle. He loves to play. He's the man.</h3> 
+      </div>     
+      <br /> <br />
+    <div class="charlie-face col-6 offset-3">
+      <%= image_tag 'Charlie.jpg', class: 'img-fluid' %>
+    </div>
+      
     <%= yield %>
   </body>
 </html>
