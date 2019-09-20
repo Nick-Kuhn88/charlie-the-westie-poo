@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="text-center">
+      <h1>Charlie the Westie-Poo</h1>
+      <p>The cutest dog in world. The happiesst fellow around.</p>
+    </div>
+  </div>
+  <div class="text-center">
+  <h3>He loves to cuddle. He loves to play. He's the man.</h3>
+  </div>
+  <br /> <br />
+<div class="charlie-face col-6 offset-3">
+  <%= image_tag 'Charlie.jpg', class: 'img-fluid' %>
+  <br />
+
+  <div class="comp-button float-left">
+    <%= link_to 'Compliment Charlie!', new_compliment_path %>
+  </div>
+</div>
+<br />
+<br />
+
+<div class="jumbotron">
+  <% @compliments.each do |compliment| %>
+    <div class="text-center">
+      <p class="message"><%= compliment.message %></p>
+    </div>
+  <% end %>
+
+</div>

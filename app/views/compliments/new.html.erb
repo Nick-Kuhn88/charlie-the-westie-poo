@@ -1,0 +1,9 @@
+<div class="text-center col-10 offset-1 praise-box">
+
+  <h1 class="comp-header">Compliment Charlie!</h1>
+  <small><%= link_to 'I just want to see that face again...', root_path%></small>
+  <%= simple_form_for @compliment do |f| %>
+    <%= f.input :message %>
+    <%= f.submit "Compliment!", class: 'btn btn-primary' %>
+  <% end %>
+</div>
